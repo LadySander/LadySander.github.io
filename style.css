@@ -8,8 +8,13 @@
 }
 
 .curriculo {
+ hello-world
   max-width: 1500px;
   max-height: 1000px;
+
+  max-width: 1200px;
+  max-height: 400px;
+ main
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   justify-items: center;
@@ -25,7 +30,10 @@
   height: 100%;
   background-color: cornflowerblue;
   border-radius: 5px 0px 0px 5px;
+ hello-world
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+
+ main
 }
 
 .perfil,
@@ -42,15 +50,23 @@
 .direita {
   margin-top: 20px;
   margin-bottom: 20px;
+ hello-world
   margin-left: -44px;
   margin-right: 100px;
+
+  margin-left: 0px;
+  margin-right: 20px;
+ main
   padding: 20px;
   grid-column: span 5;
   height: 100%;
   color: darkblue;
   background-color: azure;
   border-radius: 0px 5px 5px 0px;
+ hello-world
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+
+ main
 }
 
 .descricao,
@@ -62,6 +78,7 @@ li {
   background-color: azure;
 }
 
+ hello-world
 .semordem,
 .ordem {
   background-color: inherit;
@@ -84,6 +101,8 @@ ul li {
   list-style-type: decimal;
 }
 
+
+ main
 /* EDIÇÕES GERAIS */
 h1 {
   font-size: 28px;
@@ -105,9 +124,13 @@ img {
   max-width: 200px;
   border-radius: 100%;
   border: solid 2px;
+ hello-world
   border-color: #4e74ba;
   /* Colocar sombra atrás das bordas */
   /* box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2); */
+
+  border-color: darkblue;
+ main
 }
 
 br {
