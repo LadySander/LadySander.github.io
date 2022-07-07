@@ -22,7 +22,6 @@
   margin-right: 0px;
   padding: 20px;
   grid-column: span 2;
-  height: 100%;
   background-color: cornflowerblue;
   border-radius: 5px 0px 0px 5px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
@@ -46,11 +45,14 @@
   margin-right: 100px;
   padding: 20px;
   grid-column: span 5;
-  height: 100%;
   color: darkblue;
   background-color: azure;
   border-radius: 0px 5px 5px 0px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.descricao {
+  line-height: 1.5;
 }
 
 .descricao,
@@ -85,6 +87,12 @@ ul li {
 }
 
 /* EDIÇÕES GERAIS */
+
+a {
+  text-decoration: none;
+  background-color: cornflowerblue;
+}
+
 h1 {
   font-size: 28px;
 }
