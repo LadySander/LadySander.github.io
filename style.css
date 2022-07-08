@@ -8,23 +8,56 @@
 }
 
 .curriculo {
-  max-width: 1500px;
-  max-height: 1000px;
+  max-width: 1000vh;
+  max-height: 600vh;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   justify-items: center;
 }
 
 .esquerda {
+  gap: 10px;
+  text-align: center;
+  max-width: 100%;
+  height: auto;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 100px;
-  margin-right: 0px;
+  margin-right: 5px;
   padding: 20px;
+  padding-left: 20px;
   grid-column: span 2;
   background-color: cornflowerblue;
   border-radius: 5px 0px 0px 5px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.esquerda h3,
+.esquerda p {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.esquerda li {
+  text-align: left;
+  padding-left: 0px;
+}
+
+img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 100%;
+  border: solid 2px;
+  border-color: #4e74ba;
+  /* Colocar sombra atrás das bordas */
+  /* box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2); */
+}
+
+.esquerda h3,
+.descricao h1,
+.descricao h2 {
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .perfil,
@@ -39,9 +72,11 @@
 }
 
 .direita {
+  max-width: 100%;
+  height: auto;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: -44px;
+  margin-left: 5px;
   margin-right: 100px;
   padding: 20px;
   grid-column: span 5;
@@ -51,39 +86,50 @@
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-.descricao {
-  line-height: 1.5;
+.esquerda,
+.direita {
+  gap: 10px;
 }
 
-.descricao,
-h1,
+.descricao h1,
 h2,
-h3,
 p,
-li {
+br {
+  line-height: 1.5;
   background-color: azure;
 }
 
-.semordem,
-.ordem {
-  background-color: inherit;
-}
-
 li {
-  margin-left: 20px;
-}
-
-ul,
-ol {
-  display: list-item;
+  margin-left: 40px;
 }
 
 ul li {
   list-style-type: disc;
 }
 
-.ordem li {
-  list-style-type: decimal;
+/* Paa criar margin ou br sem alterar o background-color, criar uma <div> e usar ela como um destes, criando seu estilo específico, altura, cor de fundo, etc */
+.divisao {
+  height: 20px;
+  background-color: inherit;
+}
+
+.secao {
+  background-color: #94aaf0;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.secao h3,
+.secao h4,
+.secao p,
+.divisao {
+  background-color: inherit;
+}
+
+.alinhamento {
+  background-color: #94aaf0;
+  display: grid;
+  justify-items: end;
 }
 
 /* EDIÇÕES GERAIS */
@@ -95,6 +141,7 @@ a {
 
 h1 {
   font-size: 28px;
+  text-align: center;
 }
 
 h2 {
@@ -105,21 +152,10 @@ h3 {
   font-size: 20px;
 }
 
+h4 {
+  font-size: 18px;
+}
+
 p {
   font-size: 16px;
-}
-
-img {
-  max-width: 200px;
-  border-radius: 100%;
-  border: solid 2px;
-  border-color: #4e74ba;
-  /* Colocar sombra atrás das bordas */
-  /* box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2); */
-}
-
-br {
-  display: block;
-  content: "";
-  margin-top: 10px;
 }
